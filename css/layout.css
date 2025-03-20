@@ -1,0 +1,122 @@
+/* Navbar */
+.navbar {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  padding: 10px 20px;
+}
+
+.nav-left-cont,
+.nav-main-cont,
+.nav-right-cont {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.news-cont {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.secondary-news-cont {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: start;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ---------------- DOS centers - Units Section ---------------- */
+
+.dos-centres-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-x: hidden;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* ----------------  ISRO portals ---------------- */
+.isro-portals {
+  width: 100%;
+  height: fit-content;
+  padding: 30px 40px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+/* ---------------- Footer ---------------- */
+Footer {
+  width: 100%;
+  height: fit-content;
+  padding: 30px 50px;
+}
+
+.foot-main-cont {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: small;
+}
+
+.foot-sub-cont {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.foot-sec-cont {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: small;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+@media (max-width: 460px) {
+  .nav-main-cont p {
+    display: none;
+  }
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-right-cont {
+    gap: 0px;
+  }
+
+  .dos-centres-grid {
+    grid-template-columns: 1fr;
+  }
+  .foot-sec-cont {
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 20px;
+  }
+}
+
+.use-flex {
+  display: flex;
+  align-items: center;
+  gap: var(--use-flex-gap);
+}
