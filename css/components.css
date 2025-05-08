@@ -1,0 +1,415 @@
+/* Search Bar */
+.search-bar {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgb(255, 255, 255, 0.2);
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  color: white;
+  background: transparent;
+  width: 100%;
+  font-size: 16px;
+}
+
+.search-bar input::placeholder {
+  color: rgb(255, 255, 255, 0.2);
+}
+
+.search-bar:focus-within input::placeholder {
+  color: rgb(255, 255, 255, 0.5);
+}
+
+.search-bar i {
+  color: rgb(255, 255, 255, 0.2);
+}
+
+.search-bar:focus-within i {
+  color: white;
+}
+
+.search-bar:focus-within {
+  border: 2px solid var(--primary-color);
+}
+
+/* Buttons */
+.lang-options {
+  gap: 10px;
+}
+.lang-options button {
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.lang-options button:hover {
+  color: var(--primary-color);
+}
+
+#isro-logo,
+#india-emblem {
+  width: 60px;
+  height: 60px;
+}
+
+#isro-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  letter-spacing: 0px;
+}
+
+#menu-icon {
+  font-size: 30px;
+  color: var(--primary-color);
+}
+
+#mobile-search-icon {
+  display: none;
+  font-size: 24px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 90px);
+}
+
+#hero-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+}
+
+.video-text {
+  width: 500px;
+  height: fit-content;
+  position: absolute;
+  top: 15%;
+  left: 50px;
+  color: white;
+  text-align: left;
+}
+
+.know-more {
+  margin-top: 20px;
+}
+
+.know-more a {
+  color: white;
+  text-decoration: none;
+}
+
+.flash-news {
+  color: white;
+  width: 100%;
+  overflow: hidden;
+  padding: 20px 20px;
+  position: absolute;
+  bottom: 0;
+}
+
+.flash-news-cont {
+  width: fit-content;
+  display: flex;
+  align-items: start;
+  gap: 20px;
+  overflow: hidden;
+  animation: marquee 50s linear infinite;
+}
+
+.flash-news-cont:hover {
+  animation-play-state: paused;
+}
+
+.flash-news-text {
+  color: rgb(255, 255, 255, 0.7);
+  padding-top: 15px;
+  min-width: 400px;
+  font-size: small;
+  border-top: 1px solid rgb(255, 255, 255, 0.5);
+}
+
+.news-link {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+.news-link:hover {
+  color: white;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* ---------------- News and Events Section ---------------- */
+
+.news-events-cont {
+  color: rgba(0, 0, 0, 0.9);
+  letter-spacing: 0px;
+  width: 100%;
+  background-color: white;
+  height: 100vh;
+  padding: 20px 50px;
+  padding-top: 30px;
+  overflow: hidden;
+}
+
+.news-navbar {
+  margin: 16px 0px;
+  margin-bottom: 30px;
+  font-size: large;
+}
+
+.news-card-date {
+  font-weight: lighter;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.image-cont {
+  width: 350px;
+  height: fit-content;
+  position: relative;
+}
+.news-text {
+  padding: 20px 0px;
+}
+.news-image {
+  width: 350px;
+  height: 350px;
+}
+
+.active-news {
+  color: var(--isro-blue);
+  border-bottom: 2px solid var(--isro-blue);
+}
+
+.forward-icon {
+  position: absolute;
+  padding: 20px 25px;
+  bottom: 0;
+  right: 0;
+  color: black;
+  background-color: white;
+  font-size: 28px;
+}
+
+.news-card {
+  width: 350px;
+  height: 30%;
+}
+
+.news-content {
+  font-size: 15px;
+}
+
+/* ---------------- Isro Portals ---------------- */
+
+.portals-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 90%;
+  flex-wrap: wrap;
+  object-fit: cover;
+  object-position: center;
+  filter: saturate(125%);
+  margin-bottom: 30px;
+}
+
+.portal-item {
+  width: var(--portal-item-size);
+  height: var(--portal-item-size);
+  clip-path: circle(50% at 50% 50%);
+  background-color: aliceblue;
+}
+
+/* ---------------- DOS centers - Units Section ---------------- */
+
+.dos-centers {
+  width: 100%;
+  min-height: 100vh;
+  background-color: white;
+  color: rgb(0, 0, 0, 0.9);
+  padding: 20px 50px;
+  padding-bottom: 80px;
+  letter-spacing: 0px;
+}
+
+.dos-head-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.dos-centre-title {
+  font-size: 30px;
+  font-weight: bold;
+  overflow: hidden;
+}
+
+.dos-auto-body {
+  font-size: 30px;
+  font-weight: bold;
+  overflow: hidden;
+  padding: 30px 20px;
+}
+
+.dos-center-card {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.centre-image {
+  width: 100%;
+  height: 65%;
+  object-fit: cover;
+}
+
+.centre-text {
+  padding: 10px 20px;
+}
+
+@media (max-width: 460px) {
+  .dos-centers {
+    padding: 0;
+  }
+  .dos-center-card {
+    height: fit-content;
+    width: fit-content;
+    font-size: small;
+  }
+  .dos-head-cont {
+    font-size: medium;
+  }
+
+  .dos-centre-title {
+    font-size: large;
+  }
+
+  .dos-auto-body {
+    font-size: large;
+    font-weight: bold;
+    padding: 10px 25px;
+    text-align: center;
+  }
+}
+
+/* ---------------- Footer ---------------- */
+.link-caret {
+  display: inline;
+}
+
+.foot-sub-cont a {
+  text-decoration: none;
+  color: rgb(255, 255, 255, 0.8);
+}
+
+.foot-sub-cont a:hover {
+  color: var(--isro-safron);
+}
+
+.foot-final-cont {
+  border-top: 1px solid rgb(255, 255, 255, 0.2);
+  margin-top: 40px;
+  padding-top: 30px;
+}
+
+.designer-link {
+  text-decoration: none;
+  color: var(--isro-blue);
+}
+
+.designer-link:hover {
+  color: var(--isro-safron);
+}
+
+.designer-link a {
+  text-decoration: none;
+  color: var(--isro-blue);
+  transition: color 0.3s ease-in-out;
+}
+
+.designer-link a:hover {
+  color: var(--isro-safron);
+}
+
+/* @media (max-width: 460px) {
+  .search-bar {
+    display: none;
+  }
+  .lang-options {
+    display: none;
+  }
+  #india-emblem {
+    display: none;
+  }
+  #isro-logo {
+    width: 50px;
+    height: 50px;
+  }
+  #menu-icon {
+    font-size: 24px;
+  }
+  #mobile-search-icon {
+    display: block;
+    font-size: 24px;
+  }
+} */
+
+@media (max-width: 1200px) {
+
+  #page {
+    display: none;
+  }
+
+  #info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #screen-warning {
+    width: 300px;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+}
+

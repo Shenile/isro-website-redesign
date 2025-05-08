@@ -1,0 +1,54 @@
+.divider {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.divider-gray {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.primary-text {
+  color: var(--primary-black);
+}
+
+.secondary-text {
+  color: var(--secondary-black);
+}
+
+.date{
+  font-weight: lighter;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.date-light{
+  font-weight: lighter;
+  color: rgb(0, 0, 0, 0.7);
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+
+}
+.link-light{
+  text-decoration: none;
+  color: rgb(0, 0, 0, 0.7);
+}
+.link:hover {
+  transform: scale(1.1);
+}
+
+
+
+
