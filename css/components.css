@@ -389,9 +389,10 @@
   }
 } */
 
-#info{
+#info, #screen-warning{
   display: none;
 }
+
 
 @media (max-width: 1200px) {
 
